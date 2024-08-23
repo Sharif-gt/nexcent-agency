@@ -4,11 +4,10 @@
 
   :root {
     --primary-text-colour: #26323b;
-    --secondary-text-colour: #abbed1;
+    --secondary-colour: #abbed1;
     --btn-color: #1b5e1f;
     --btn-dark: #103813;
     --padding-inline: 20px;
-    /* color: #8bccc9ee; */
   }
 
   * {
@@ -35,12 +34,17 @@
     font-family: "monospace", sans-serif;
     font-size: 1.2rem;
     line-height: 1.8rem;
+    color: #41424C;
+  }
+  h1 {
+    font-size: 3rem;
   }
 
   .container {
     max-width: 1120px;
     padding-inline: var(--padding-inline);
     margin-inline: auto;
+    overflow: hidden;
   }
 
   .flex {
@@ -52,22 +56,24 @@
 
   .primary-btn {
     background-color: #03AC13;
-    padding-inline: 15px;
+    color: white !important;
+    padding-inline: 20px;
     padding-block: 10px;
     border-radius: 5px;
     transition: 0.2s;
-  }
-
-  .hover-link:hover {
-    color: #0096FF;;
+    font-weight: 600;
   }
 
   .primary-btn:hover {
     background-color: #028A0F;
   }
 
+  .hover-link:hover {
+    color: #0096FF;;
+  }
+
   .nav {
-    background-color: var(--secondary-text-colour);
+    background-color: var(--secondary-colour);
     padding-block: 20px;
   }
 
@@ -102,11 +108,32 @@
     color: #028A0F;
   }
 
-  .sign-up {
-    color: var(--primary-text-colour);
-  }
-  
-
   .auth-links {
     gap: 30px;
+  }
+
+  .header {
+    background-color: var(--secondary-colour);
+  }
+
+  .main-header {
+    gap: 80px;
+    padding-inline: 20px;
+    padding-block: 90px;
+  }
+
+  .header-left {
+    flex-direction: column;
+    align-items: start;
+    max-width: 50vw;
+    gap: 30px;
+  }
+
+  .header-left span {
+    display: block;
+    color: #028A0F;
+  }
+
+  .header-right img {
+    max-width: 30vw;
   }
