@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Moderustic&family=Roboto:wght@400;700&display=swap');
+
+  /* resets */
+
+  :root {
+    --primary-text-colour: #26323b;
+    --secondary-text-colour: #abbed1;
+    --btn-color: #1b5e1f;
+    --btn-dark: #103813;
+    --padding-inline: 20px;
+    /* color: #8bccc9ee; */
+  }
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Roboto", sans-serif;
+    color: var(--primary-text-colour);
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  p {
+    font-family: "monospace", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+
+  .container {
+    max-width: 1120px;
+    padding-inline: var(--padding-inline);
+    margin-inline: auto;
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+
+  /* end resets */
+
+  .primary-btn {
+    background-color: #03AC13;
+    padding-inline: 15px;
+    padding-block: 10px;
+    border-radius: 5px;
+    transition: 0.2s;
+  }
+
+  .hover-link:hover {
+    color: #0096FF;;
+  }
+
+  .primary-btn:hover {
+    background-color: #028A0F;
+  }
+
+  .nav {
+    background-color: var(--secondary-text-colour);
+    padding-block: 20px;
+  }
+
+  .main-nav {
+    justify-content: space-between;
+  }
+
+  .main-nav img {
+    flex-basis: 200px;
+  }
+
+  .nav-links {
+    gap: 30px;
+  }
+
+  .nav-links a {
+    color: var(--primary-text-colour);
+    font-weight: 600;
+    transition: 0.2s;
+  }
+
+  .hover-link:hover {
+    color: #0096FF;
+  }
+
+  .auth-links a {
+    font-weight: 600;
+    transition: 0.2s;
+  }
+
+  .login {
+    color: #028A0F;
+  }
+
+  .sign-up {
+    color: var(--primary-text-colour);
+  }
+  
+
+  .auth-links {
+    gap: 30px;
+  }
