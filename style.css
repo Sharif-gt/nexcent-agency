@@ -40,6 +40,10 @@
     font-size: 3rem;
   }
 
+  h2 {
+    font-size: 2.5rem;
+  }
+
   h3 {
     font-size: 1.7rem;
   }
@@ -338,4 +342,72 @@
 
   .blog-card a:hover {
     color: #1b5e1f;
+  }
+
+  .footer {
+    background-color: var(--secondary-colour);
+  }
+
+  .footer-head {
+    text-align: center;
+    padding-block: 50px;
+  }
+
+  .footer-head a {
+    margin-top: 15px;
+  }
+
+  .footer-container {
+    background-color: #26323b;
+    padding-block: 50px;
+    padding-inline: 30px;
+  }
+
+  .footer-menu {
+    justify-content: space-between;
+    padding-block: 20px;
+  }
+
+  .menus {
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+  }
+
+  .menus h4 {
+    color: #fff !important;
+  }
+
+  .menus a {
+    color: #fff !important;
+  }
+
+  .menus a:hover {
+    color: #03AC13 !important;
+  }
+
+  .email {
+    border: 0;
+    border-radius: 5px;
+    height: 20px;
+    padding: 10px;
+  }
+
+  .footer-logo {
+    text-align: center;
+  }
+
+  .footer-logo p {
+    color: #fff !important;
+    padding-top: 20px;
+  }
+
+  .footer-logo a {
+    color: #fff !important;
+  }
+
+  .footer-icon {
+    justify-content: center;
+    gap: 20px;
+    padding-block: 20px;
   }
