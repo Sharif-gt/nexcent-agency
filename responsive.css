@@ -132,3 +132,66 @@
     gap: 20px;
   }
 }
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+    color: #028a0f;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .auth-links {
+    flex-direction: column;
+  }
+
+  .client-logo {
+    gap: 10px;
+  }
+
+  .icon-sec {
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .icons {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .achievement-section {
+    padding-block: 30px;
+  }
+
+  .customer-detail {
+    max-width: 90%;
+  }
+
+  .footer-container {
+    padding-block: 20px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .achievement {
+    margin-top: 20px;
+  }
+}
