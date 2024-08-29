@@ -6,6 +6,7 @@
     <title>Nexcent Agency</title>
     <link rel="icon" href="./assets/Icon.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
     <!-- nav bar -->
@@ -17,22 +18,27 @@
                         <img src="./assets/Logo.svg" alt="company-logo">
                     </a>
                 </div>
-                <div>
-                    <ul class="flex nav-links">
-                        <li><a href="#" class="hover-link">Home</a></li>
-                        <li><a href="#" class="hover-link">Service</a></li>
-                        <li><a href="#" class="hover-link">Feature</a></li>
-                        <li><a href="#" class="hover-link">Product</a></li>
-                        <li><a href="#" class="hover-link">Testimonal</a></li>
-                        <li><a href="#" class="hover-link">FAQ</a></li>
-                    </ul>
+                <div class="flex nav-link" id="nav-link">
+                    <div>
+                        <ul class="flex nav-links">
+                            <li><a href="#" class="hover-link">Home</a></li>
+                            <li><a href="#" class="hover-link">Service</a></li>
+                            <li><a href="#" class="hover-link">Feature</a></li>
+                            <li><a href="#" class="hover-link">Product</a></li>
+                            <li><a href="#" class="hover-link">Testimonal</a></li>
+                            <li><a href="#" class="hover-link">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="flex auth-links">
+                            <li><a href="#" class="hover-link login">Login</a></li>
+                            <li><a href="#" class="primary-btn">Sign up <i class="fa-solid fa-arrow-right"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <ul class="flex auth-links">
-                        <li><a href="#" class="hover-link login">Login</a></li>
-                        <li><a href="#" class="primary-btn">Sign up <i class="fa-solid fa-arrow-right"></i></a></li>
-                    </ul>
-                </div>
+                <a href="#" class="nav-toggle hover-link" id="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
             </div>
         </div>
     </nav>
@@ -269,6 +275,17 @@
     
 
 <script src="https://kit.fontawesome.com/0d6c150981.js" crossorigin="anonymous"></script>
+
+<script>
+    const toggleButton = document.getElementById('nav-toggle')
+    const navLinks = document.getElementById('nav-link')
+
+    toggleButton.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    })
+
+    
+</script>
 
 
 </body>
